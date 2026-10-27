@@ -1,0 +1,122 @@
+/*모든 페이지 공통 스타일*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: arial, "맑은 고딕", sans-serif;
+    background-color: white;
+    color: #263f56;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 6%;
+    gap: 20px;
+    background-color: white;
+    border-bottom: 1px solid #dce7ef;
+}
+
+.logo {
+    font-size: 22px;
+    color: #075b9b;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #304e68;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: #0879d1;
+}
+
+.header-icons {
+    display: flex;
+    gap: 13px;
+    font-size: 20px;
+}
+
+/*메인 배너 디자인*/
+.banner {
+    min-height: 300px;
+    padding: 35px 8%;
+    background-color: #eaf5ff;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+
+.banner .small-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0879d1;
+}
+
+.banner h1 {
+    font-size: 34px;
+    color: #103e69;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.banner h1 span {
+    color: #0879d1;
+}
+
+.banner p {
+    color: #5c7286;
+}
+
+.banner img {
+    width: 40%;
+    height: 230px;
+    object-fit: cover;
+    /*가로 세로 비율 유지, 부모 박스의 가로, 세로 크기에 맞춰서 이미지가 확대, 축소*/
+    /*지정 크기보다 큰부분은 잘려나감*/
+    border-radius: 8px;
+}
+
+/*공통 버튼 디자인*/
+.button {
+    display: inline-block;
+    background-color: #0879d1;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: #075b9b;
+}
+
+/*green, gray, red 버튼 디자인*/
+
+.green-button {
+    background-color: #159765;
+}
+
+.gray-button {
+    background-color: #718493;
+}
+
+.red-button {
+    background-color: #e34d59;
+}
