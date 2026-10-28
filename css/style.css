@@ -100,7 +100,7 @@ nav a:hover {
     border: 0;
     border-radius: 5px;
     font-size: 13px;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 .button:hover {
@@ -117,8 +117,16 @@ nav a:hover {
     background-color: #718493;
 }
 
+.gray-button:hover {
+    background-color: #4d5963;
+}
+
 .red-button {
     background-color: #e34d59;
+}
+
+.red-button:hover {
+    background-color: #e01122;
 }
 
 /*content 공통 선언*/
@@ -277,6 +285,191 @@ footer p {
     margin-bottom: 5px;
 }
 
+/*게시판 목록 디자인*/
+
+/*게시판 페이지 배너 디자인*/
+.page-title {
+    background-color: #eaf5ff;
+    padding: 25px 8%;
+}
+
+.page-title h1 {
+    color: #103e69;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-title p {
+    color: #5c7286;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*게시판 검색 도구 디자인*/
+.board-search {
+    display: flex;
+    gap: 8px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.board-search select {
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #cbdbe7;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.board-search input {
+   height: 40px;
+    padding: 10px;
+    border: 1px solid #cbdbe7;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.push-right {
+    margin-left: auto;
+}
+
+/*게시판 목록 테이블 디자인*/
+
+.board-table {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    border-collapse: collapse;/*열과 열사이의 줄을 없애줌*/
+}
+
+/*제목줄*/
+.board-table th {
+    padding: 13px 7px;
+    background-color: #f0f7fc;
+    color: #304e68;
+}
+
+.board-table td {
+    padding: 13px 7px;
+    border-bottom: 1px solid #dce7ef;
+}
+
+.board-table .subject {
+    text-align: left;
+}
+
+.board-table .subject a:hover {
+    color: #0879d1;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*페이지 넘버 디자인*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.pagination a {
+    border: 1px solid #dce7ef;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.pagination .active {
+    background-color: #0879d1;
+    color: white;
+}
+
+/*글 상세내용 보기 디자인*/
+.article-content h2 {
+    
+    border-bottom: 1px solid #dce7ef;
+    padding-bottom: 15px;
+}
+
+.article-info {
+    display: flex;
+    font-size: 13px;
+    gap: 20px;
+    color:  #718493;
+    border-bottom: 1px solid #dce7ef;
+    padding: 12px 0;
+}
+
+.article-body {
+    padding: 25px 5px;
+    min-height: 250px;/*늘어날 가능성이 있음*/
+}
+
+.article-body h3 {
+    color: #075b9b;
+    font-weight: bold;
+}
+
+.article-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;/*가로 오른쪽 정렬*/
+}
+
+.prev-next {
+    padding-top: 0;    
+}
+
+.prev-next p {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #dce7ef;
+    padding: 10px;
+}
+
+.prev-next b {
+    color: #075b9b;
+}
+
+/*글쓰기 폼 디자인*/
+.form-content {
+    max-width: 850px;
+    /* border: 1px solid red; */
+}
+
+.form-content label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-content input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbdbe7;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.form-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbdbe7;
+    border-radius: 5px;
+    font-family: inherit;
+    resize: vertical;/*사용자가 세로 방향으로만 입력창 확장*/
+    font-size: 16px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
 /*모바일 화면에서 보기 좋게 배리(700미만 화면)*/
 @media(max-width: 700px){
     header {
@@ -326,3 +519,4 @@ footer p {
     }
 
 }
+
